@@ -361,7 +361,7 @@ CREATE TABLE `catalog_items` (
   KEY `catalog_name` (`catalog_name`) USING BTREE,
   KEY `costs` (`cost_credits`,`cost_points`,`points_type`) USING BTREE,
   KEY `id` (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=30001 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=30001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `catalog_items`
@@ -552,7 +552,7 @@ CREATE TABLE `chatlogs_private` (
   KEY `user_from_id` (`user_from_id`) USING BTREE,
   KEY `user_to_id` (`user_to_id`) USING BTREE,
   KEY `message` (`message`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `chatlogs_private`
@@ -580,7 +580,7 @@ CREATE TABLE `chatlogs_room` (
   KEY `user_to_id` (`user_to_id`) USING BTREE,
   KEY `message` (`message`) USING BTREE,
   KEY `room_id` (`room_id`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `chatlogs_room`
@@ -1085,7 +1085,7 @@ CREATE TABLE `items_base` (
   `effect_id_female` int(3) NOT NULL DEFAULT 0,
   `clothing_on_walk` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=599724 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=599724 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `items_base`
